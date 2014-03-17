@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <script type="text/javascript" src="./js/script_file.js"></script>
+	<title>Sushi Bai Kiyoshi - Order</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <table id="nav">
+            <tr>
+                <td><a href="./index.html"><h3>Sushi Bai Kiyoshi</h3></a></td>
+                <td><a href="./login.html">Login</a></td>                
+                <td><a href="./order.html">Order</a></td>
+                <td><a href="./register.html">Register</a></td>
+            </tr>
+        </table>
+    </div>
+   
+    <div id="content">
+    
+        <p>Start adding items to the menu to create your order.</p>
+        
+        <table id="menu_options">
+            <tr>
+                <th colspan="10">Menu Categories</th>
+            </tr>
+            <tr>
+                <td id="combos" onclick="menu_list(this.id); return false;">Combos</td>
+                <td id="rolls" onclick="menu_list(this.id); return false;">Rolls</td>
+                <td>Appetizers</td>
+                <td>Sashimi</td>
+            </tr>
+        </table>
+        
+        
+        <table id="cart">
+            <tr>
+                <th class="t_c">My Cart</th>
+            </tr>
+            
+            <!-- temp -->
+            <tr>
+                <td>Item 1</td>
+            </tr>
+            <!-- /temp -->
+            
+            <tr>
+                <td><hr/>Total: $20.00</td>
+            </tr>
+            <tr class="t_c">
+                <td><hr/><input id="checkout" type="button" value="Checkout"/></td>
+            </tr>
+        </table>
+        
+        <table class="menu">
+            <tr>
+                <th id="menu_header" colspan="2">Menu</th>
+            </tr>
+            <tr>
+                <table id="combos_list" class="menu">
+                    <tr>
+                        <th class="t_c" colspan="2">Combos</th>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/1.png" />
+                        </td>
+                        <td>
+                            <b>Maki Combo</b><br/>         
+                            <hr/>
+                            <input type="textbox" style="width:18px" value="0"/> Spicy Tuna <br/>
+                            <input type="textbox" style="width:18px" value="0"/> Spicy Salmon <br/>
+                            <input type="textbox" style="width:18px" value="0"/> Real California <br/>
+                            <hr/>
+                            <input type="button" value="Add to Order"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/2.png" />
+                        </td>
+                        <td>
+                            <b>Nigiri Combo</b><br/>
+                            Spicy Tuna <input type="textbox" style="width:18px" value="0"/><br/>
+                            Spicy Salmon <input type="textbox" style="width:18px" value="0"/><br/>
+                            Avocado Cucumber <input type="textbox" style="width:18px" value="0"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/3.png" />
+                        </td>
+                        <td>
+                            <b>Sashimi Combo</b><br/>
+                            Chefs Selection (12 pc) <input type="textbox" style="width:18px" value="0"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/4.png" />
+                        </td>
+                        <td>
+                            <b>Sushi Combo</b><br/>
+                            Spicy Tuna <input type="textbox" style="width:18px" value="0"/><br/>
+                            Spicy Salmon <input type="textbox" style="width:18px" value="0"/><br/>
+                            Avocado Cucumber <input type="textbox" style="width:18px" value="0"/><br/>
+                        </td> 
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <table id="rolls_list" class="menu">
+                    <tr>
+                        <th class="t_c" colspan="2">Rolls</th>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/1.png" />
+                        </td>
+                        <td>
+                            <b>Maki Combo</b><br/>          
+                            Spicy Tuna <input type="textbox" style="width:18px"/><br/>
+                            Spicy Salmon <input type="textbox" style="width:18px"/><br/>
+                            Real California <input type="textbox" style="width:18px"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/2.png" />
+                        </td>
+                        <td>
+                            <b>Nigiri Combo</b><br/>
+                            Spicy Tuna <input type="textbox" style="width:18px"/><br/>
+                            Spicy Salmon <input type="textbox" style="width:18px"/><br/>
+                            Avocado Cucumber <input type="textbox" style="width:18px"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/3.png" />
+                        </td>
+                        <td>
+                            <b>Sashimi Combo</b><br/>
+                            Chefs Selection (12 pc) <input type="textbox" style="width:18px"/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu_item_img">
+                            <img src="./images/menu/4.png" />
+                        </td>
+                        <td>
+                            <b>Sushi Combo</b><br/>
+                            Spicy Tuna <input type="textbox" style="width:18px"/><br/>
+                            Spicy Salmon <input type="textbox" style="width:18px"/><br/>
+                            Avocado Cucumber <input type="textbox" style="width:18px"/><br/>
+                        </td> 
+                    </tr>
+                </table>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="footer">
+        <br/>
+        <p>Location: 1300 Harmony Rd.N. Oshawa, ON L1K 2B3</p>
+        <p>Telephone: 905-561-4427</p>
+        <br/>
+    </div>
+
+</body>
+
+</html>
